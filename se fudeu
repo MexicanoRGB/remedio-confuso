@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+    cadeia nome, medic[4]
+    inteiro i
+
+  escreva ("\nQual o nome do paciente? ")
+  leia (nome)
+
+    para(i = 0; i <2; i++)
+    {
+      escreva ("\nqual o medicamento e dosagem? ")
+      leia(medic[i])
+      leia(medic[i+1])
+    }
+    para(i = 0; i <4; i++)
+    {
+      escreva ("\nqual o medicamento e dosagem? ")
+      escreva(medic[i])
+      escreva(medic[i+1])
+    }
+    escreva ("\nNome: " , nome, " medicamento: ", medic)
+  }
+}
