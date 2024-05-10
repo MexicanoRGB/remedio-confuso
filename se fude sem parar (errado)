@@ -1,0 +1,29 @@
+programa {
+  funcao inicio() {
+    inteiro i = 1
+    inteiro p = 1
+    cadeia nome
+    cadeia medic [i]
+    real dose [i]
+    cadeia op
+
+  escreva ("\nQual o nome do paciente? ")
+  leia (nome)
+
+    faca {
+        escreva("informe o "+i+"º medicamento: ")
+        leia(medic[i-1])
+        escreva("informe a "+i+"º dosagem: ")
+        leia(dose[i-1])
+        escreva("deseja continuar?")
+        leia(op)
+        i++
+    } enquanto(op != "n")
+
+    escreva ("o paciente "+nome + " ira tomar os remedios abaixo: \n")
+    i--
+    para(p = 1; p <= i; p++){
+      escreva(medic[p], "dose: ",dose[p], "\n")
+    }
+  }
+}
